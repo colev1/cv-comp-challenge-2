@@ -1,0 +1,87 @@
+body{
+  padding: 0;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  box-sizing: border-box;
+}
+
+/*left nav bar */
+.left-nav{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.left-button{
+  padding: 10px;
+  margin: 5px;
+ 
+}
+
+
+/*right nav-bar */
+.right-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.win-button{
+  font-size: 2rem;
+}
+
+.username-button{
+  color: #2980ad;
+}
+
+.shares{
+  font-size: 40px;
+}
+/*bottom card display area*/
+.card-display-area{
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  height: 1000px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: repeat(4, minmax(300px, 400px));*/
+  grid-template-rows: 400px 400px;
+  grid-gap: 10px;
+  margin: 20px;
+  /*height: 66%;*/
+}
+
+.cards{
+  border: solid black;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.card-top{
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+}
