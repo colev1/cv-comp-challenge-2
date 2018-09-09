@@ -55,10 +55,10 @@ body{
 
 /*bottom card display area*/
 .card-display-area{
-  margin-top: 170px;
-  padding: 0;
   background-color: #efefef;
   height: 1000px;
+  margin-top: 170px;
+  padding: 0;
 }
 
 .card-container{
@@ -84,15 +84,26 @@ body{
   justify-content: space-between;
 }
 
-.top1{
+.card-top1{
   background-image: URL("pics/pug.jpg");
   background-size: cover;
 }
 
-.pug{
-  height: 50%;
+.card-bottom-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1.2fr;
+  padding: 10px;
+  padding-left: 16px;
 }
 
+.link{
+  background-color: #efefef;
+
+}
+
+.attachment-number{
+  color: blue;
+}
 
 @media screen and (max-width: 600px){
 
