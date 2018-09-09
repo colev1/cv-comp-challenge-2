@@ -1,21 +1,25 @@
 body{
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
 }
 
 .nav-bar{
+  background-color: #2b2b2b;
+  box-sizing: border-box;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
   width: 100%;
-  background-color: #2b2b2b;
-  color: white;
-  box-sizing: border-box;
 }
 
 /*left nav bar */
 .left-nav{
-  display: flex;
   align-items: flex-end;
+  display: flex;
   margin-bottom: 1rem;
 }
 
@@ -44,14 +48,17 @@ body{
 }
 
 .shares{
-  font-size: 40px;
+  font-size: 2rem;
+  padding: 16px;
 }
+
+
 /*bottom card display area*/
 .card-display-area{
-  margin: 0;
-  padding: 0;
   background-color: #efefef;
   height: 1000px;
+  margin-top: 170px;
+  padding: 0;
 }
 
 .card-container{
@@ -68,7 +75,7 @@ body{
   border: solid black;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1.78fr;
 }
 
 .card-top{
@@ -76,11 +83,27 @@ body{
   display: flex;
   justify-content: space-between;
 }
-fsd
 
+.card-top1{
+  background-image: URL("pics/pug.jpg");
+  background-size: cover;
+}
 
+.card-bottom-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1.2fr;
+  padding: 10px;
+  padding-left: 16px;
+}
 
+.link{
+  background-color: #efefef;
 
+}
+
+.attachment-number{
+  color: blue;
+}
 
 @media screen and (max-width: 600px){
 
