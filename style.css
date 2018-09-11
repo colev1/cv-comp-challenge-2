@@ -1,6 +1,8 @@
 body{
   font-family: 'Open Sans', sans-serif;
   padding: 0;
+  min-width: 250px;
+  background-color: #efefef;
 }
 
 .nav-bar{
@@ -26,21 +28,30 @@ body{
 .left-button{
   padding: 10px;
   margin: 5px;
- 
+}
+
+.left-button:hover{
+  cursor:  pointer;
 }
 
 
 /*right nav-bar */
 .right-nav{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  box-sizing: border-box;
+}
+
+.right-button:hover{
+  cursor:  pointer;
 }
 
 .win-button{
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .username-button{
@@ -63,48 +74,191 @@ body{
 
 .card-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /*grid-template-rows: repeat(4, minmax(300px, 400px));*/
-  grid-template-rows: 400px 400px;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 10px;
   margin: 20px;
-  /*height: 66%;*/
+  max-width: 1400px;
 }
 
 .cards{
-  border: solid black;
   background-color: white;
-  display: grid;
-  grid-template-rows: 1fr 1.78fr;
+  border: solid black;
+  box-shadow: 3px 0 3px #bababa;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
 }
 
 .card-top{
-  background-color: grey;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  color: white;
   display: flex;
+  font-size: 1.2rem;
+  height: calc((144/400) * 100%);
   justify-content: space-between;
+  padding: 10px;
+}
+
+.card-top:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.round-arrow{
+  font-size: 3rem;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+.round-arrow:hover{
+  color: grey;
+  cursor: pointer;
 }
 
 .card-top1{
-  background-image: URL("pics/pug.jpg");
-  background-size: cover;
+  background-image: URL("pics/pup1.jpg");
 }
 
+.card-top2{
+  background-image: URL("pics/pup2.jpg");
+}
+.card-top3{
+  background-image: URL("pics/pup3.jpg");
+}
+.card-top4{
+  background-image: URL("pics/pup4.jpg");
+}
+.card-top5{
+  background-image: URL("pics/pup5.jpg");
+}
+.card-top6{
+  background-image: URL("pics/pup6.jpg");
+}
+.card-top7{
+  background-image: URL("pics/pup7.jpg");
+}
+.card-top8{
+  background-image: URL("pics/pup8.jpg");
+}
+
+
+
 .card-bottom-container{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1.2fr;
-  padding: 10px;
-  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  /*grid-template-rows: 1fr 1fr 1fr 1.2fr;*/
+  padding: 20px;
+  /*padding-left: 20px;*/
+}
+
+.recipient{
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .link{
   background-color: #efefef;
-
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  word-wrap: break-word;
+  width: 100%;
+  /*width: 80%;*/
 }
-
+.bottom{
+  margin: 4px;
+}
+.date{
+  font-size: 80%;
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+h3{
+  margin-top: 2px;
+}
 .attachment-number{
   color: blue;
 }
 
-@media screen and (max-width: 600px){
 
+
+@media screen and (max-width: 600px){
+  .card-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  }
+  .nav-bar{
+    font-size: .8rem;
+  }
 }
+/*@media screen and (max-width: 750px){
+  .card-container{
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+   
+    font-size: .8rem;
+  }
+  .left-button{
+    font-size: 14px;
+  }
+  .right-nav{
+    font-size: 13px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+*/
+@media screen and (max-width: 500px){
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 26%;
+    position: unset;
+    width: 100%;
+  }
+  .left-nav{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+  .left-button{
+    font-size: .8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .right-nav{
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: .6rem;
+    width: 100%;
+  }
+  .win-button{
+    font-size: 1rem;
+  }
+  .shares{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .card-display-area{
+    font-size: 90%;
+    height: 100%;
+    margin-top: 0;
+  }
+  .list{
+    word-break: break-all;
+  }
+  .card-bottom-container{
+    padding: .8rem;
+  }
+}
+
+
