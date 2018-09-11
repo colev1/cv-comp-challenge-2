@@ -1,7 +1,8 @@
-##Static Comp 2
+## Static Comp 2
+Cole Vanacore
 
-###Comp
+### Comp
 
 
 
-###My version
+### My version
