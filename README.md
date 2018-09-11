@@ -7,5 +7,5 @@ Cole Vanacore
 
 ### My version
 
-![my-static-comp](pics/static-comp-2)
+![my-static-comp](pics/static-comp-2.png)
     
