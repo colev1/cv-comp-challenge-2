@@ -3,7 +3,7 @@ Cole Vanacore
 
 ### Comp
 
-![static-comp-2](cv-comp-challenge-2/pics/static-comp-challenge-2.jpg)
+![static-comp-2](pics/static-comp-challenge-2.jpg)
 
 ### My version
 
